@@ -26,8 +26,8 @@ function Update () {
     // name is "realFolder/shot 0005.png"
     var name = String.Format("{0}/shot {1:D04}.png", realFolder, Time.frameCount );
     
-    // if(Input.GetKeyDown("a")){
+    if(Input.GetKeyDown("a")){
     // Capture the screenshot
     Application.CaptureScreenshot (name, sizeMultiplier);
-    // }
+    }
 }
