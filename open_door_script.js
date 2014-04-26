@@ -41,7 +41,8 @@ function OnTriggerEnter (other : Collider){
 }
 
 function OnTriggerExit (other : Collider){
-	//transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, defaultRot, Time.deltaTime * smooth);
+	// door self-close not working?
+	// transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, defaultRot, Time.deltaTime * smooth);
 
 	if (other.gameObject.tag == "Player") {
 		enter = false;
