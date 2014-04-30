@@ -3,6 +3,7 @@ var NightAudio : AudioSource;
 var SunAudio : AudioSource;
 var GirlsAudio : AudioSource;
 var RiosAudio : AudioSource;
+var ErikaVal2Audio : AudioSource;
 
 function OnTriggerEnter (other : Collider){
 	if (other.gameObject.tag == "Player") {
@@ -11,5 +12,6 @@ function OnTriggerEnter (other : Collider){
 		NightAudio.Play();
 		GirlsAudio.Play();
 		RiosAudio.Play();
+		ErikaVal2Audio.Play();
 	}
 }
